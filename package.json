@@ -1,0 +1,41 @@
+{
+  "name": "dom-fe-97",
+  "version": "1.0.0",
+  "description": "<p align='right'>< TeachMeSkills /></p>\r <h1 align='center'>DOM</h1>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint ./",
+    "format": "npx eslint ./ --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js}": "npx eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMS-FE-97/DOM-FE-97.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TMS-FE-97/DOM-FE-97/issues"
+  },
+  "homepage": "https://github.com/TMS-FE-97/DOM-FE-97#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3"
+  }
+}

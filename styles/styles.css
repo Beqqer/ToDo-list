@@ -1,0 +1,185 @@
+@import './normalize.css';
+
+.container{
+    background: linear-gradient(#e66465, #9198e5);
+    /* width: 600px; */
+    margin: 50px auto;
+    padding: 30px;  
+    border-radius: 20px;
+    
+}
+.title-form{
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 40px;
+}
+.btn-delete{
+    border-radius: 10px;
+    background: linear-gradient(45deg, red, blue);
+    color: #fff;
+    padding: 15px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-add{
+    border-radius: 10px;
+    background: linear-gradient(45deg, red, blue);
+    color: #fff;
+    padding: 15px 34px;
+    border: 0;
+    cursor: pointer;
+}
+.entry-field{
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    width: 470px;
+}
+
+.todo-card{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+position: relative;
+}
+.done-card{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+position: relative;
+}
+.todo-text{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    width: 600px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.close-list{
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(45deg, red, blue);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.close-list::after{
+    content: '';
+height: 15px;
+width: 2px;
+background-color: #fff;
+position: absolute;
+rotate: -45deg;
+top: 5px;
+}
+.close-list::before{
+    content: '';
+height: 15px;
+width: 2px;
+background-color: #fff;
+position: absolute;
+rotate: 45deg;
+top: 5px;
+}
+
+.date{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px ;
+    position: relative;
+    height: 30px;
+    min-width: 90px;
+    text-align: center;
+    top: 30px;
+    left: 85px; 
+}
+
+
+
+.checkbox-other {
+	display: block;
+	margin: 0 0 10px 0;
+	line-height: 22px;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+.checkbox-other .custom-checkbox[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-other .check {
+	display: inline-block;
+	position: relative; 
+	padding: 0 0 0 35px; 
+	line-height: 22px;    
+}
+.checkbox-other .check:before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	position: absolute;
+	left: -50px;
+	top: -7px;
+    border: 2px solid black;
+    background: linear-gradient(45deg, red, blue);
+}
+ 
+.checkbox-other .custom-checkbox[type=checkbox] + .check:after {
+	content: "";	
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.checkbox-other .custom-checkbox[type=checkbox]:checked + .check:after {
+	content: "✓";
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+	position: absolute;
+	left: -37px;
+	top: 0px;
+	opacity: 1;
+}
+
+.task-list{
+    max-height: 570px;
+overflow: auto;
+
+}
+.no-tasks{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 40px;
+display: block;
+color: #fff;
+}
+
+.done{
+    color: #c2c2c2;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    width: 600px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: line-through;
+}
